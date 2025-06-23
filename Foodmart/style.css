@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: orange;
+}
+
+.search input {
+  padding: 8px;
+  width: 300px;
+}
+
+.cart {
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  background-color: orange;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: orange;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  padding: 40px;
+  background-color: palegreen;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 30px;
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-image img {
+  width: 200px;
+}
+
+/* Offers */
+.offers {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.offer-box {
+  background-color: orangered;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Categories */
+.section-title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.cat-box {
+  background-color: yellow;
+  padding: 15px 25px;
+  border-radius: 8px;
+}
+
+/* Products */
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  border: 1px solid black;
+  padding: 15px;
+  width: 150px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.product-card img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Footer */
+.footer {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  height: 100px;
+}

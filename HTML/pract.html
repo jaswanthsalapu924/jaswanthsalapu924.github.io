@@ -4,19 +4,449 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .form{
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    .mainhead{
+        height: 50px;
+        background-color: navy;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 20px;
+        padding-top: 10px;
+    }
+    .con1{
+        font-size: 40px;
+        height: 60px;
+        width: 680px;
+        color: aliceblue;
+    }
+    .con2{
+        font-size: 20px;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .c1{
+        width: 100px;
+        display: flex;
+        justify-content: space-around;
+        color: aliceblue;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .homcont{
+        height: 730px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .contenth{
+        margin-top: 130px;
+        border-radius: 50px;
+        height: 400px;
+        width: 560px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: lightgray;
+        padding: 40px;
+    }
+    .he{
+        height: 90px;
+        background-color: navy;
+        border-radius: 20px;
+        color: aliceblue;
+        font-size: 25px;
+        text-align: center;
+    }
+    .des{
+        height: 280px;
+        border-radius: 30px;
+        padding: 25px;
+        background-color: aliceblue;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 30px;
+    }
+        .contenth1{
+        height: 750px;
+        width: 560px;
+        overflow: hidden;
+
+        display: flex;
+        justify-content: space-around;
+    }
+    .image-on-lines {
+  position: absolute;
+  top: 190px; 
+  left: 920px; 
+  z-index: 1; 
+  width: 470px; 
+  height: 450px;
+  background-color: aqua;
+  border-radius: 200px;
+}
+    .lines{
+        height: 750px;
+        width: 5px;
+        background-color: navy;
+
+    }
+    .heading{
+        height: 50px;
+        background-color: navy;
+        color: aliceblue;
+        text-align: center;
+    }
+    .projects1{
+        height: 530px;
+        background-color: teal;
+        display: grid;
+        padding: 80px;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        
+        column-gap: 10px;
+        row-gap: 30px;
+    }
+    .proj{
+        height: 210px;
+        width: 520px;
+        background-color: mintcream;
+        border-radius: 30px;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .details{
+        background-color: aquamarine;
+        height: 215px;
+        width: 500px;
+        border-radius: 30px;
+    }
+    .image{
+        height: 215px;
+        width: 200px;
+        background-color: blue;
+        border-radius: 30px;
+    }
+    img{
+        width: 510px;
+        height: 215px;
+        border-radius: 30px;
+    }
+    .services{
+        height: 530px;
+        padding: 80px;
+        justify-content: space-around;
+        background-color: darkgray;
+        display: grid;
+    }
+    .serv{
+        height:150px;
+        width: 1380px;
+        border: 1px solid;
+        border-radius: 100px;
+        display: flex;
+        color: navy;
+        background-color: lightgray;
+    }
+    .logo{
+        background-color: white;
+        border-radius: 150px;
+        height: 150px;
+        width: 170px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+.content{
+  
+    
+
+}
+    .about{
+        height: 530px;
+        padding: 80px;
+        background-color: skyblue;
+    }
+    .aboutc{
+        height: 480px;
+        background-color: lightcyan;
+        padding: 25px;
+        font-size: 25px;
+    }
+    h2{
+        color: navy;
+    }
+    .form{
+        display: flex;
+        justify-content: space-between;
+        background-color: lightgoldenrodyellow;
+        height: 530px;
+        padding: 80px;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .info1{
+        height: 480px;
+        background-color: aliceblue;
+        
+        padding: 25px;
+    }
+
+    .list{
+        color: navy;
+        font-size: 20px;
+    }
+    input{
+        height: 30px;
+        width: 420px;
+        border: 2px solid navy;
+        border-radius: 10px;
+    }
+    textarea{
+        border: 2px solid navy;
+        border-radius: 10px;
+    }
+    button{
+        width: 420px;
+        height: 40px;
+        background-color: navy;
+        color: white;
+    }
+    .footer{
+        color: white;
+        height: 50px;
+        background-color: black;
+        text-align: center;
+    }
+    .ser{
+        background-color: aqua;
+        width: 900px;
+        padding-right: 8px;
+        padding-left: 18px;
+        padding-top: 10px;
+    }
+    .sen{
+        background-color: burlywood;
+        width: 80px;
+    }
+</style>
 </head>
+
 <body>
-    <fieldset>
-        <form>
-            <p>Name : <input type="text" placeholder="Enter Name"></p>
-        </form>
-    </fieldset>
+    <section id="Home">
+        <div class="mainhead">
+            <div class="con1">
+                <b>Jaswanth Salapu</b>
+            </div>
+            <div class="con2">
+                <div class="c1">
+                    <b><a href="#Home" style="color: aliceblue; text-decoration: none; font-size: 20px;">Home</a></b>
+                </div>
+          <div class="c1">
+                    <b><a href="#projects" style="color: aliceblue; text-decoration: none; font-size: 20px;">Projects</a></b>
+                </div>
+                            <div class="c1">
+                    <b><a href="#Services" style="color: aliceblue; text-decoration: none; font-size: 20px;">Services</a></b>
+                </div>
+                            <div class="c1">
+                    <b><a href="#About" style="color: aliceblue; text-decoration: none; font-size: 20px;">About</a></b>
+                </div>
+                        <div class="c1">
+                    <b><a href="#Contact" style="color: aliceblue; text-decoration: none; font-size: 20px;">Contact</a></b>
+                </div>
+            </div>
+        </div>
+        <div class="homcont">
+            <div class="contenth">
+                <div class="he">
+                    <h1>Web Developer</h1>
+                </div>
+                <div class="des">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Placeat modi voluptatem ducimus error autem. Quae dolorem
+                     repudiandae unde excepturi tempora perferendis beatae vo
+                     luptatum, quidem quo, quasi facilis. Rerum, natus ut.
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                     Illum vel explicabo sequi tempore provident, consequatur 
+                     rem dicta ea accusamus eum minus eos, nobis quod repellat! 
+                     Adipisci totam ullam molestiae magnam natus quisquam deser
+                     unt veritatis nam enim ducimus, sed placeat neque doloribus 
+                     repudiandae, ipsum soluta. Officiis reiciendis non delectus 
+                     tenetur maxime!
+                </div>
+            </div>
+            <div class="contenth1">
+                <div class="lines"></div>
+                 <div class="lines"></div>
+                  <div class="lines"></div>
+                   <div class="lines"></div>
+                    <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <img src="software.jfif" alt="Overlay" class="image-on-lines">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="heading"><h1>Projects</h1></div>
+        <div class="projects1">
+          <div class="proj">
+            <div class="details">
+                <img src="./fourthsemproj.png" alt="proj1">
+            </div>
+          </div>
+        <div class="proj">
+                    <div class="details">
+                <img src="./fifthsemproject.png" alt="proj1">
+            </div>
+          </div>
+        <div class="proj">
+                    <div class="details">
+                <img src="./sixthsemproject.jpg" alt="proj1">
+            </div>
+          </div>
+        <div class="proj">
+                    <div class="details">
+                <img src="./fourthsemproj.png" alt="proj1">
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <section id="Services">
+        <div class="heading"><h1>Services</h1></div>
+        <div class="services">
+            <div class="serv">
+                <div class="logo" style="font-size: 100px;">
+          <i style="color: orange;" class="fas fa-globe" title="Web Development"></i>
+        </div>
+                <div class="content">
+                        <h1>Web Development</h1>
+                        <p>As a Full Stack Developer, I focus
+                         on building seamless web and mobile applications with a strong grasp of both
+                         frontend and backend technologies such as React, Node.js, Express, MongoDB</p>
+                    </div>
+            </div>
+            <div class="serv">
+                <div class="logo" style="font-size: 100px;">
+          <i class="devicon-android-plain colored" title="Android"></i>
+        </div>
+                <div class="content">
+                    <h1>Webd Development</h1>
+                    <p>As a Full Stack Developer, I focus
+                     on building seamless web and mobile applications with a strong grasp of both
+                     frontend and backend technologies such as React, Node.js, Express, MongoDB</p>
+                </div>
+            </div>
+           <div class="serv">
+                <div class="logo" style="font-size: 100px;">
+          <i class="devicon-android-plain colored" title="Android"></i>
+        </div>
+                <div class="content">
+                    <h1>Webd Development</h1>
+                    <p>As a Full Stack Developer, I focus
+                     on building seamless web and mobile applications with a strong grasp of both
+                     frontend and backend technologies such as React, Node.js, Express, MongoDB</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="About">
+        <div class="heading"><h1>About</h1></div>
+        <div class="about">
+            <div class="aboutc">
+                <h2>About Me</h2>
+                <p>B.Tech Computer Science Engineering student at Lovely Professional University,
+                    specializing in Full-Stack Web Development. As a Full Stack Developer, I focus
+                     on building seamless web and mobile applications with a strong grasp of both
+                     frontend and backend technologies such as React, Node.js, Express, MongoDB,
+                     and MySql. I'm passionate about crafting innovative and user-centric digital
+                     experiences, and I thrive on solving complex problems through code. My goal is
+                      to work on impactful projects that create real-world value.</p>
+                    <h2>Skills</h2>
+                <div style="font-size: 70px;">
+                
+        <i class="devicon-cplusplus-plain colored"></i>
+                <i class="devicon-java-plain"></i>
+        <i class="devicon-laravel-original"></i>
+          <i class="devicon-html5-plain colored" title="HTML5"></i>
+          <i class="devicon-css3-plain colored" title="CSS3"></i>
+          <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+          <i class="devicon-python-plain colored" title="Python"></i>
+          <i class="devicon-kotlin-plain colored" title="Kotlin"></i>
+          <i class="devicon-android-plain colored" title="Android"></i>
+          <i class="devicon-react-original colored" title="React"></i>
+        
+        
+              
+        </div>
+            </div>
+        </div>
+    </section>
+
+        <section id="Contact">
+            <div class="heading"><h1>Contact</h1></div>
+                <div class="form">
+                <div class="info1">
+            <h2>Contact Information</h2>
+            <ul class="list">
+                <li><p>Email -> jaswanthsalapu924@gmail.com</p></li>
+                <li><p>Location -> Visakhapatnam, Andhrapradesh</p></li>
+                <li><p><a href="">Github</a></p></li>
+                <li><p><a href="">Linkedin</a></p></li>
+            </ul>
+                </div>
+                <div class="info1">
+            <h2>Send Me a Message</h2>
+            Name
+            <p> <input type="text" placeholder="Enter Name"></p>
+            Email
+            <p><input type="email" placeholder="Enter Email"></p>
+            Message
+            <p><textarea rows="7" cols="56"></textarea></p>
+            <button>Submit</button>
+                </div>
+                </div>
+        </section>
+    <div class="footer">
+    <footer>
+        <h3>Copyright@2025. All Rights Reserved</h3>
+    </footer>
+    </div>
 </body>
 </html>
