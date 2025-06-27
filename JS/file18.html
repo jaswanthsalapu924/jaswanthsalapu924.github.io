@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1(x){
+            alert(x);
+        }
+
+    </script>
+</head>
+<body>
+    <!-- <p onclick="f1(event.target.innerHTML)">Home</p>
+    <p onclick="f1(event.target.innerHTML)">Cart</p> -->
+
+
+    <p>
+        <input onchange="f1(event.target.value)" input="text" placeholder="Email">
+    </p>
+    <p>
+        <input onchange="f1(event.target.value)" type="password" placeholder="Passward">
+    </p>
+    <button>Submit</button>
+</body>
+</html>
